@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-labelledby="title desc">
+  <title id="title">QR de propina de ejemplo</title>
+  <desc id="desc">Imagen de marcador para reemplazar por un QR real.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f8fa" />
+      <stop offset="100%" stop-color="#dfe8ee" />
+    </linearGradient>
+  </defs>
+  <rect width="360" height="360" fill="url(#bg)" />
+  <g fill="#0d1b2a">
+    <rect x="35" y="35" width="88" height="88" rx="6" />
+    <rect x="50" y="50" width="58" height="58" rx="4" fill="#f6f8fa" />
+    <rect x="58" y="58" width="42" height="42" rx="3" />
+    <rect x="237" y="35" width="88" height="88" rx="6" />
+    <rect x="252" y="50" width="58" height="58" rx="4" fill="#f6f8fa" />
+    <rect x="260" y="58" width="42" height="42" rx="3" />
+    <rect x="35" y="237" width="88" height="88" rx="6" />
+    <rect x="50" y="252" width="58" height="58" rx="4" fill="#f6f8fa" />
+    <rect x="58" y="260" width="42" height="42" rx="3" />
+    <rect x="150" y="150" width="16" height="16" />
+    <rect x="182" y="150" width="16" height="16" />
+    <rect x="214" y="150" width="16" height="16" />
+    <rect x="150" y="182" width="16" height="16" />
+    <rect x="214" y="182" width="16" height="16" />
+    <rect x="150" y="214" width="16" height="16" />
+    <rect x="182" y="214" width="16" height="16" />
+    <rect x="214" y="214" width="16" height="16" />
+    <rect x="182" y="246" width="16" height="16" />
+    <rect x="214" y="246" width="16" height="16" />
+    <rect x="246" y="150" width="16" height="16" />
+    <rect x="246" y="214" width="16" height="16" />
+    <rect x="278" y="214" width="16" height="16" />
+  </g>
+  <rect x="26" y="26" width="308" height="308" rx="16" fill="none" stroke="#0d1b2a" stroke-width="4" />
+  <text x="180" y="346" text-anchor="middle" font-size="16" font-family="Arial, sans-serif" fill="#0d1b2a">
+    Reemplaza esta imagen por tu QR real
+  </text>
+</svg>

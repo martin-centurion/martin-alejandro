@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propinas y Reseñas | Martín</title>
+    <meta
+      name="description"
+      content="Página de propinas y reseñas para compartir datos bancarios y acceso directo a Google Reviews."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-left"></div>
+    <div class="bg-shape bg-shape-right"></div>
+
+    <main class="page">
+      <header class="profile card reveal">
+        <div class="avatar" aria-hidden="true">MC</div>
+        <p class="eyebrow">Mi perfil</p>
+        <h1 id="profile-name">Martin Centurion</h1>
+        <p id="profile-bio">
+          Aquí podés encontrar mis datos bancarios, el enlace para dejar una
+          reseña en Google sobre mi atención en La Farola Express y también mi
+          sitio web para que pueda ver mis trabajos realizados como diseñador
+          web.
+        </p>
+      </header>
+
+      <section class="links card reveal" aria-label="Accesos rápidos">
+        <button class="link-btn" id="show-tip">
+          <span>Mis datos bancarios</span>
+          <small>Alias + CBU/CVU</small>
+        </button>
+
+        <a
+          class="link-btn"
+          id="google-review-link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Dejar una reseña de mi atención</span>
+          <small>Ayuda al restaurante a crecer</small>
+        </a>
+
+        <a
+          class="link-btn"
+          id="maps-link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Ver mi sitio web</span>
+          <small>mymdevelopers.com.ar</small>
+        </a>
+      </section>
+
+      <section
+        class="tip card hidden reveal"
+        id="tip-section"
+        aria-label="Datos de propina"
+      >
+        <div class="tip-head">
+          <h2>Propina por transferencia</h2>
+          <button class="secondary close-btn" id="hide-tip" aria-label="Cerrar">
+            &times;
+          </button>
+        </div>
+
+        <div class="bank-grid">
+          <div>
+            <span>Banco</span>
+            <strong id="bank-name">Banco de Ejemplo</strong>
+          </div>
+          <div>
+            <span>Titular</span>
+            <strong id="holder-name">Martín Centurión</strong>
+          </div>
+          <div>
+            <span>Alias</span>
+            <strong id="alias-value">martin.ejemplo</strong>
+          </div>
+          <div>
+            <span>CBU/CVU</span>
+            <strong id="cbu-value">0000000000000000000000</strong>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="secondary copy-btn" data-copy="alias">
+            Copiar alias
+          </button>
+          <button class="secondary copy-btn" data-copy="cbu">
+            Copiar CBU/CVU
+          </button>
+        </div>
+      </section>
+
+      <footer class="footer reveal">
+        <p id="restaurant-line">
+          Gracias por tu tiempo y por apoyar mi trabajo.
+        </p>
+      </footer>
+    </main>
+
+    <p class="toast" id="toast" role="status" aria-live="polite"></p>
+    <script src="./script.js"></script>
+  </body>
+</html>
