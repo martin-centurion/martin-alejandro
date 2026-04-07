@@ -25,8 +25,7 @@ const holderEl = $("#holder-name");
 
 $("#profile-name").textContent = SITE_CONFIG.profile.name;
 $("#profile-bio").textContent = SITE_CONFIG.profile.bio;
-$("#restaurant-line").textContent =
-  "Gracias por tu tiempo y por apoyar mi trabajo.";
+$("#restaurant-line").textContent = "MyM Developers © 2026";
 
 $("#google-review-link").href = SITE_CONFIG.restaurant.googleReviewUrl;
 $("#maps-link").href = SITE_CONFIG.restaurant.mapsUrl;
