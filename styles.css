@@ -27,8 +27,16 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 16% -8%, rgba(37, 99, 235, 0.24) 0%, transparent 44%),
-    radial-gradient(circle at 88% 0%, rgba(31, 41, 55, 0.34) 0%, transparent 36%),
+    radial-gradient(
+      circle at 16% -8%,
+      rgba(37, 99, 235, 0.24) 0%,
+      transparent 44%
+    ),
+    radial-gradient(
+      circle at 88% 0%,
+      rgba(31, 41, 55, 0.34) 0%,
+      transparent 36%
+    ),
     linear-gradient(165deg, var(--sidebar) 0%, var(--bg) 55%, #111c34 100%);
 }
 
@@ -66,7 +74,11 @@ body {
 
 .card {
   background:
-    linear-gradient(140deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+    linear-gradient(
+      140deg,
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.01)
+    ),
     var(--card);
   border: 1px solid var(--border);
   border-radius: 24px;
@@ -80,17 +92,20 @@ body {
 }
 
 .avatar {
-  width: 70px;
-  height: 70px;
+  width: 98px;
+  height: 98px;
   margin: 0 auto 0.8rem;
-  border-radius: 18px;
+  border-radius: 22px;
   display: grid;
   place-items: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  letter-spacing: 0.03em;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--text);
-  background: linear-gradient(135deg, var(--accent), #1d4ed8);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.9), rgba(16, 24, 38, 0.95));
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 10px 24px rgba(2, 8, 23, 0.38);
 }
 
 .eyebrow {
@@ -122,7 +137,11 @@ h1 {
 .link-btn {
   border: 1px solid var(--border);
   border-radius: 16px;
-  background: linear-gradient(120deg, rgba(31, 41, 55, 0.86), rgba(11, 18, 32, 0.94));
+  background: linear-gradient(
+    120deg,
+    rgba(31, 41, 55, 0.86),
+    rgba(11, 18, 32, 0.94)
+  );
   color: var(--text);
   text-decoration: none;
   width: 100%;
@@ -134,7 +153,10 @@ h1 {
   text-align: left;
   font: inherit;
   cursor: pointer;
-  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
 }
 
 .link-btn span {
@@ -150,7 +172,11 @@ h1 {
 .link-btn:focus-visible {
   transform: translateY(-2px);
   border-color: var(--accent);
-  background: linear-gradient(120deg, rgba(37, 99, 235, 0.32), rgba(16, 24, 38, 0.9));
+  background: linear-gradient(
+    120deg,
+    rgba(37, 99, 235, 0.32),
+    rgba(16, 24, 38, 0.9)
+  );
   outline: none;
 }
 

@@ -22,9 +22,24 @@ const aliasEl = $("#alias-value");
 const cbuEl = $("#cbu-value");
 const bankEl = $("#bank-name");
 const holderEl = $("#holder-name");
+const avatarEl = $("#profile-avatar");
+
+function getInitials(name) {
+  const parts = name.trim().split(/\s+/).filter(Boolean);
+  if (!parts.length) {
+    return "MC";
+  }
+  if (parts.length === 1) {
+    return parts[0].slice(0, 2).toUpperCase();
+  }
+  return `${parts[0][0]}${parts[parts.length - 1][0]}`.toUpperCase();
+}
 
 $("#profile-name").textContent = SITE_CONFIG.profile.name;
 $("#profile-bio").textContent = SITE_CONFIG.profile.bio;
+if (avatarEl) {
+  avatarEl.textContent = getInitials(SITE_CONFIG.profile.name);
+}
 $("#restaurant-line").textContent = "MyM Developers © 2026";
 
 $("#google-review-link").href = SITE_CONFIG.restaurant.googleReviewUrl;
